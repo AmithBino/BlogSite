@@ -101,7 +101,8 @@ export default {
     }
     body { display: block }
     button[type="button"] { 
-      background-color: #2F58CD;
+      /* background-color: #2F58CD; */
+      background-image: linear-gradient(to right, #3A1078, #2F58CD);
       color: white;
       font-size: 0.8rem;
       border: none;
@@ -110,7 +111,7 @@ export default {
       font-weight: 500;
     }
     button[type="button"]:hover {
-      background-color: #102C57; 
+      background-image: linear-gradient(to right, #2F58CD, #3A1078); 
       color: white; 
     }
 
