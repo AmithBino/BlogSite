@@ -8,6 +8,7 @@
   <div class="content-container">
     <FormPage/>
     </div>
+    <FooterPage/>
 </div>
 
     </template>
@@ -15,11 +16,13 @@
     <script>
     import HeaderPage from './Header.vue'
     import FormPage from './form.vue'
+    import FooterPage from './footer.vue'
     export default {
         name: "ContactPage",
         components:{
             HeaderPage,
-            FormPage
+            FormPage,
+            FooterPage
         },
     }
     </script>

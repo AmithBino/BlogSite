@@ -9,15 +9,17 @@
 
    </div>
 </div>
-
+<FooterPage/>
    </template>
    
    <script>
    import HeaderPage from './Header.vue'
+   import FooterPage from './footer.vue'
    export default {
        name: "ContactPage",
        components:{
            HeaderPage,
+           FooterPage
        },
    }
    </script>

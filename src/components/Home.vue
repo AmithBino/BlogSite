@@ -23,7 +23,7 @@
             <img src="@/assets/behance.png" alt="Behance">
           </a>
         </div>
-        <div class="portfolio-button">
+        <div class="work">
           <router-link to="/portfolio">
             See my Work
            </router-link>
@@ -31,14 +31,17 @@
       </div>
     </div>
 </div>
+<FooterPage/>
 </template>
 
 <script>
 import HeaderHome from './HeaderHome.vue'
+import FooterPage from './footer.vue'
 export default {
   name: 'HomePage',
   components:{
-    HeaderHome
+    HeaderHome,
+    FooterPage
   },
 }
 </script>
@@ -107,14 +110,14 @@ export default {
   width: 34px;
   height: auto;
 }
-.portfolio-button {
+.work {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
 
-.portfolio-button a {
+.work a {
   display: inline-block;
   padding: 10px 20px;
   background-image: linear-gradient(to right, #3A1078, #2F58CD);
@@ -124,11 +127,7 @@ export default {
   transition: background-image 0.3s ease;
 }
 
-.portfolio-button a:hover {
+.work a:hover {
   background-image: linear-gradient(to right, #2F58CD, #3A1078);
 }
 </style>
-
-
-
-
