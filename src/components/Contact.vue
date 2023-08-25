@@ -5,7 +5,7 @@
         <h1>Contact Us</h1>
   </header>
   
-  <div class="content-container">
+  <div class="formcontainer">
     <FormPage/>
     </div>
     <FooterPage/>
@@ -58,9 +58,9 @@ body {
     font-size: 40px;
 }
 
-.content-container {
+.formcontainer {
   flex: 1;
-  padding-top: 100px;
+  margin-top: 250px;
 }
 
 </style>

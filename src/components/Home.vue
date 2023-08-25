@@ -41,7 +41,7 @@ export default {
   name: 'HomePage',
   components:{
     HeaderHome,
-    FooterPage
+    FooterPage,
   },
 }
 </script>

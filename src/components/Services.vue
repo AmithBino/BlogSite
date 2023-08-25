@@ -16,7 +16,7 @@
    import HeaderPage from './Header.vue'
    import FooterPage from './footer.vue'
    export default {
-       name: "ContactPage",
+       name: "ServicesPage",
        components:{
            HeaderPage,
            FooterPage
