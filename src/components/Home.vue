@@ -52,7 +52,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding-top: 150px;
-  margin-left: -400px;
+  margin-left: -500px;
   padding-left: 100px;
 }
 .right-image {

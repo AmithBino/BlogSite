@@ -1,6 +1,6 @@
 <template>
   <h2 class="slider-title">Our Clients</h2>
-  <div class="slider-area">
+  <div class="slider-area" @mouseenter="pauseAnimation" @mouseleave="resumeAnimation">
     <div class="wrapper">
       <div class="item"><img alt="" src="@/assets/c1.png"></div>
       <div class="item"><img alt="" src="@/assets/c2.png"></div>
@@ -20,6 +20,16 @@
 <script>
 export default {
   name: 'ClientPage',
+  methods: {
+    pauseAnimation() {
+      const wrapper = document.querySelector('.wrapper');
+      wrapper.classList.add('paused');
+    },
+    resumeAnimation() {
+      const wrapper = document.querySelector('.wrapper');
+      wrapper.classList.remove('paused');
+    },
+  },
 };
 </script>
 
@@ -54,6 +64,9 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.wrapper.paused .item {
+  animation-play-state: paused;
+}
 .item {
   flex: 0 0 auto;
   animation: rotate 15s linear infinite;

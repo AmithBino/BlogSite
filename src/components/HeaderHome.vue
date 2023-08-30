@@ -1,6 +1,8 @@
 <template>
     <div class="header">
-    <img alt="Vue logo" src="@/assets/logob.png">
+    <router-link to="/">
+            <img alt="Vue logo" src="@/assets/logob.png">
+    </router-link>
     <div class="nav">
         <router-link class="link" to="/">Home</router-link>
         <router-link class="link" to="/about">About</router-link>
