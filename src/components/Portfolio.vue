@@ -2,11 +2,11 @@
     <div class="page-container">
    <header class="header-container">
        <HeaderPage/>
-       <h1>Protfolio</h1>
+       <h1>Portfolio</h1>
  </header>
  
  <div class="content-container">
-
+    <PortfolioContent/>
    </div>
    <FooterPage/>
 </div>
@@ -16,10 +16,13 @@
    <script>
    import HeaderPage from './Header.vue'
    import FooterPage from './footer.vue'
+   import PortfolioContent from "./Portfoliocnt.vue"
+
    export default {
        name: "PortfolioPage",
        components:{
            HeaderPage,
+           PortfolioContent,
            FooterPage
        },
    }
