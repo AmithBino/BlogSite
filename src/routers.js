@@ -5,6 +5,7 @@ import BlogPage from './components/Blog.vue'
 import ContactPage from './components/Contact.vue'
 import ProfPage from './components/Portfolio.vue'
 import ServicePage from "./components/Services";
+import WorkPage from "./components/Work.vue";
 
 const routes=[
     {
@@ -36,6 +37,11 @@ const routes=[
         name:'ServicePage',
         component:ServicePage,
         path: '/services'
+    },
+    {
+        name:'WorkPage',
+        component:WorkPage,
+        path: '/portfolio/work'
     }
 ]
 

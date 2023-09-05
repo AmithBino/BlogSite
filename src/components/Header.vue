@@ -29,7 +29,7 @@ export default {
     }
     .nav a.nav-link:hover{
         color: #EEBD56;
-    }
+    } 
     img{
          width: 130px;
          height: auto;

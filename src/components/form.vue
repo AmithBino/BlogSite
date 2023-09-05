@@ -109,6 +109,7 @@ export default {
       border-radius: 4px;
       padding: 8px 12px;
       font-weight: 500;
+      cursor: pointer; 
     }
     button[type="button"]:hover {
       background-image: linear-gradient(to right, #2F58CD, #3A1078); 

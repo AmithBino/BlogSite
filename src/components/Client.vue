@@ -62,6 +62,7 @@ export default {
   padding: 2.5rem;
   background: #FFFAF4;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer; 
 }
 
 .wrapper.paused .item {

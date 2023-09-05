@@ -13,14 +13,21 @@
   
       <transition name="fade" mode="out-in">
         <div :key="currentFilter" class="image-container">
-          <div class="row" v-for="(image, index) in filteredImages" :key="index">
+          <div class="row" v-for="(imageRow, index) in filteredImages" :key="index">
+            <router-link
+            v-for="(image, imgIndex) in imageRow"
+            :key="imgIndex"
+            :to="{ name: 'WorkPage', params: { id: image.id } }"
+          >
+          <div class="image-wrapper">
             <img
-              v-for="(image, imgIndex) in image"
-              :key="imgIndex"
               :src="require(`@/assets/${image.url}`)"
               :alt="image.alt"
               class="portfolio-image"
             />
+            <div class="image-info-popup">Click image for more info</div> 
+            </div>
+          </router-link>
           </div>
         </div>
       </transition>
@@ -39,7 +46,6 @@
           { id: 4, url: "img4.jpg", alt: "Image 4", tags: ["All", "Upcoming"] },
           { id: 5, url: "img5.jpg", alt: "Image 5", tags: ["All", "Popular"] },
           { id: 6, url: "img6.jpg", alt: "Image 6", tags: ["All", "Recent"] },
-          // Add more images with appropriate tags
         ],
         currentFilter: "All",
       };
@@ -102,6 +108,7 @@
     background-color: white;
     border: none;
     font-size: 16px;
+    cursor: pointer; 
   }
   
   button:hover {
@@ -122,16 +129,40 @@
   }
   
   .portfolio-image {
-    height: 210px;
-    width: 30%;
+    height: 225px;
+    width: 65%;
     margin: 20px -20px;
     transition: transform 0.3s ease;
+    cursor: pointer; 
   }
   
   .portfolio-image:hover {
     transform: scale(1.05);
   }
   
+  .image-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.image-info-popup {
+  position: absolute;
+  bottom: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.image-wrapper:hover .image-info-popup {
+  opacity: 1; 
+}
+
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity 0.3s;

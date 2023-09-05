@@ -85,6 +85,7 @@
     border-radius: 4px;
     text-decoration: none;
     transition: background-image 0.3s ease;
+    cursor: pointer; 
   }
   
   .dwndbutton:hover {
