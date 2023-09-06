@@ -1,25 +1,26 @@
 <template>
-    <div class="page-container">
+    <div class="spage-container">
    <header class="header-container">
        <HeaderPage/>
        <h1>Our Services</h1>
  </header>
- 
- <div class="content-container">
 
-   </div>
+    
 </div>
+<ServiceContent/>
 <FooterPage/>
    </template>
    
    <script>
    import HeaderPage from './Header.vue'
    import FooterPage from './footer.vue'
+   import ServiceContent from './ServiceCnt.vue'
    export default {
        name: "ServicesPage",
        components:{
            HeaderPage,
-           FooterPage
+           FooterPage,
+           ServiceContent
        },
    }
    </script>
@@ -30,10 +31,9 @@ body {
  padding: 0;
 }
 
-.page-container {
+.spage-container {
  display: flex;
  flex-direction: column;
- min-height: 100vh;
 }
 
 .header-container {
@@ -55,9 +55,8 @@ body {
    font-size: 40px;
 }
 
-.content-container {
+/* .content-container {
  flex: 1;
- padding-top: 100px;
-}
+} */
 
 </style>
