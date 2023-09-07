@@ -1,8 +1,8 @@
 <template>
     <div class="service-container">
-    <p class="firstab">ABOUT ME</p>
-    <h1>Creative Art Director</h1>
-    <h2 class="sub-title">And Designer</h2>
+    <p class="firstab">OUR SERVICE</p>
+    <h1>What Service We</h1>
+    <h2 class="sub-title">Offer For You</h2>
    </div>
    <div class="services">
         <div class="web">
@@ -52,14 +52,14 @@
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 38px;
       margin-top: -160px;
-      margin-left: -85px;
+      margin-left: -100px;
       font-style: bold;
       color: #252B48;
       
   }
   .sub-title {
       font-size: 38px;
-      margin-left: -342px;
+      margin-left: -284px;
       margin-top: -50px;
       color: #252B48;
   }

@@ -8,6 +8,7 @@
     
 </div>
 <ServiceContent/>
+<TestimonialPage/>
 <FooterPage/>
    </template>
    
@@ -15,12 +16,14 @@
    import HeaderPage from './Header.vue'
    import FooterPage from './footer.vue'
    import ServiceContent from './ServiceCnt.vue'
+   import TestimonialPage from './Testimonials.vue'
    export default {
        name: "ServicesPage",
        components:{
            HeaderPage,
            FooterPage,
-           ServiceContent
+           ServiceContent,
+           TestimonialPage
        },
    }
    </script>
