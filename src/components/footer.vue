@@ -69,7 +69,7 @@
   flex-direction: row;
   align-items: flex-start;
   margin-top: 20px;
-  margin-left: -100px;
+  margin-left: 0px;
 }
 .socialicon a {
   margin-bottom: 10px;
@@ -79,7 +79,8 @@
 .socialicon img {
   width: 30px;
   height: auto;
-  margin-right: -100px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 p{
     font-size: 16px;

@@ -93,7 +93,8 @@ display: flex;
 flex-direction: row;
 align-items: flex-start;
 margin-top: 30px;
-margin-left: -100px;
+margin-left:  -20px;
+max-height: 50px;
 }
 .social-icons a {
 margin-bottom: 10px;
@@ -104,7 +105,8 @@ color: #070A52;
 .social-icons img {
 width: 30px;
 height: auto;
-margin-right: -100px;
+padding-right: 30px;
+padding-left: 30px;
 }
 .social-icons img:hover {
 width: 34px;
@@ -114,7 +116,7 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 50px;
+margin-top: 60px;
 }
 
 .work a {
