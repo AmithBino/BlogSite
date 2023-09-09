@@ -4,10 +4,7 @@
        <HeaderPage/>
        <h1>Our Blog</h1>
  </header>
- 
- <div class="content-container">
-
-   </div>
+    <BlogContents/>
    <FooterPage/>
 </div>
 
@@ -16,10 +13,12 @@
    <script>
    import HeaderPage from './Header.vue'
    import FooterPage from './footer.vue'
+   import BlogContents from './BlogContent.vue';
    export default {
        name: "ContactPage",
        components:{
            HeaderPage,
+           BlogContents,
            FooterPage
        },
    }
@@ -54,11 +53,6 @@ body {
    margin-top: 150px;
    color: aliceblue;
    font-size: 40px;
-}
-
-.content-container {
- flex: 1;
- padding-top: 100px;
 }
 
 </style>

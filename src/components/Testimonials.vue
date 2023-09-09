@@ -4,7 +4,6 @@
     <h1>Honourable Client Says</h1>
     <h2 class="subtitle">About Me</h2>
       <div class="testimonials">
-        <!-- Display current testimonial -->
         <div v-for="(testimonial, index) in displayedTestimonials" :key="index" class="testimonial">
         <div class="testimonial-item">
           <p>{{ testimonial.text }}</p>
@@ -207,10 +206,12 @@
     cursor: pointer;
     margin-left: -3250%;
     margin-top: -40px;
+    color: #0D1282;
   }
   .arrow-right{
     font-size: 100px;
     cursor: pointer;  
     margin-top: -40px;
+    color: #0D1282;
   }
   </style>
