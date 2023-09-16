@@ -137,7 +137,7 @@ body {
 .hdr-container {
  position: sticky;
   top: 0;
-  background-color: #27005D;
+  background-color: #210D2E;
   height: 10vh;
   z-index: 100;
 }
