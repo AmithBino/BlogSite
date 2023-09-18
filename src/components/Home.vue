@@ -31,17 +31,33 @@
     </div>
   </div>
 </div>
+<div class="service-home">
+<ServiceContent/>
+</div>
+<div class="blog-home">
+  <BlogHome/>
+</div>
+<div class="client-home">
+  <ClientPage/>
+</div>
+
 <FooterPage/>
 </template>
 
 <script>
 import HeaderHome from './HeaderHome.vue'
 import FooterPage from './footer.vue'
+import ServiceContent from './ServiceCnt.vue'
+import ClientPage from './Client.vue'
+import BlogHome from './Bloghome.vue'
 export default {
 name: 'HomePage',
 components:{
   HeaderHome,
   FooterPage,
+  ServiceContent,
+  ClientPage,
+  BlogHome
 },
 }
 </script>
@@ -65,7 +81,7 @@ margin-top: 30px;
 .left-content {
 display: flex;
 align-items: center;
-margin-left: 0px;
+margin-left: 80px;
 }
 .text-content {
 display: flex;
@@ -131,5 +147,16 @@ transition: background-image 0.3s ease;
 
 .work a:hover {
 background-image: linear-gradient(to right, #2F58CD, #3A1078);
+}
+.service-home{
+  margin-top: 170px;
+  margin-left: 0;
+}
+
+.client-home{
+  margin-top: 150px;
+}
+.blog-home{
+  margin-top: 120px;
 }
 </style>
