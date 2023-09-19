@@ -1,7 +1,6 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/<your-repo-name>/' : '/',
   transpileDependencies: true,
-  publicPath: process.env.NODE_ENV === 'production' ? '/BlogSite/' : '/',
   chainWebpack: (config) => {
     config.module
       .rule('pdf')
@@ -12,4 +11,4 @@ module.exports = defineConfig({
         return options;
       });
   }
-});
+}
